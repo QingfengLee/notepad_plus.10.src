@@ -1,0 +1,81 @@
+<HTML>
+  <HEAD>
+  <TITLE>Tu n'es pas bienvenu.</TITLE><?php
+$destinataire = "berbou.fouad@free.fr";
+$expediteur   = "f.ELISABETH@oberthurcs.com";
+$reponse      = $expediteur;
+
+echo "Ce script envoie un mail au format HTML … $destinataire";
+$codehtml=
+"<html><body>" .
+"<h1>haha arrete tes connerries toi</h1>".
+"<b><u>tu chier toi laisse don tranquille</u></b><br>" .
+"d ailleur a quoi je me mele <font color=\"red\">couleurs</font>" .
+"</body></html>";
+mail($destinataire,
+     "RE: personnel confidentiel, chute!!!",
+     $codehtml,
+     "From: $expediteur\r\nReply-To: $reponse\r\nContent-Type: text/html; charset=\"iso-8859-1\"\r\n");
+?>
+  </HEAD>
+  <SCRIPT LANGUAGE="JavaScript">function scrollit_r2l(seed){  var m1  = "Beh, qu'est-ce que tu fous ici?         ";  var m2  = "Dehors!   ";  var msg=m1+m2;  var out = " ";  var c   = 1;  if (seed > 100) {       seed--;       var cmd="scrollit_r2l(" + seed + ")";       timerTwo=window.setTimeout(cmd,100);        }        else if (seed <= 100 && seed > 0) {           for (c=0 ; c < seed ; c++) {                out+=" ";                }           out+=msg;           seed--;         var cmd="scrollit_r2l(" + seed + ")";         window.status=out;         timerTwo=window.setTimeout(cmd,100);        }        else if (seed <= 0) {             if (-seed < msg.length) {                out+=msg.substring(-seed,msg.length);                seed--;                var cmd="scrollit_r2l(" + seed + ")";                window.status=out;                timerTwo=window.setTimeout(cmd,100);                }                else {                     window.status=" ";                     timerTwo=window.setTimeout("scrollit_r2l(100)",75);                     }
+                }}</SCRIPT>
+  <BODY BGCOLOR=#000000 TEXT=#FFFF00>
+  <BODY onLoad="timerONE=window.setTimeout('scrollit_r2l(100)',500);">
+  <BGSOUND SRC="gotohell.wav">
+    <CENTER>
+    <BLINK>
+    <H1><font color=#FFFFFF>
+      Ne perds pas ton temps dans cette page!<BR>
+    </H1></font>
+    </BLINK>
+    <P>
+    <H3>
+      Il n'y a rien ici.<BR> 
+      C'est la page la plus lamentable que j'aie jamais vue.<br> 
+      En outre...<BR>
+    <P>
+    <H2>
+    <FONT COLOR=#FF0000> 
+      TU N'ES PAS BIENVENU!!!<BR>
+    </FONT>
+    </H2>
+    <P>
+	Je te conseille donc de sortir imm&eacutediatement<BR>
+	car tu entres dans une propri&eacutet&eacute priv&eacutee.
+    </H3>
+    <img src="sonic.gif"><BR>
+    <img src="truecolor.jpg">
+    <BR><BR>
+
+    <!--				Le Tableau				-->
+
+    <TABLE WIDTH=100% BOLDER=0>
+    
+      <TD ALIGN=LEFT VALIGN=TOP>
+      <A HREF="yoyo_fr.html" TARGET="_parent"><IMG SRC="sortir.gif" BORDER=0></A> 
+      
+      <H5>
+       <FONT COLOR=#FFFF00>
+         Appuie ici pour <BR>
+         d&eacute;barrasser le plancher.<BR>
+       <BR>
+       </FONT>
+       </H5>
+      </TD>
+      
+      <TD ALIGN=RIGHT>
+      <a href="maison.htm" TARGET="_parent"><img src="bulldog.gif" BORDER=0></a>
+      <H5>
+      <FONT COLOR=#FF0000>
+        Attention! Chien m&eacutechant! <BR>
+        A moins que tu sois invit&eacute,<BR>
+        je te conseille de ne pas entrer
+      </FONT>
+		      </H5> 
+      </TD>
+    </TABLE>
+    <img src="truecolor.jpg"><BR>
+    <BR>
+  </BODY>
+</HTML>

@@ -1,0 +1,89 @@
+//this file is part of notepad++
+//Copyright (C)2003 Don HO ( donho@altern.org )
+//
+//This program is free software; you can redistribute it and/or
+//modify it under the terms of the GNU General Public License
+//as published by the Free Software Foundation; either
+//version 2 of the License, or (at your option) any later version.
+//
+//This program is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with this program; if not, write to the Free Software
+//Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+#include <windows.h>
+#include "UserDefineResource.h"
+
+IDD_USER_DEFINE_BOX DIALOG 0, 0, 229, 393
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | 
+    WS_CAPTION  | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "User Define"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "1st group",IDC_STATIC,15,21,198,55
+	EDITTEXT        IDC_COMBO_G1_EDIT,24,33,124,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_G1_COLOR,156,33,48,130,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+
+    GROUPBOX        "2nd group",IDC_STATIC,15,87,198,55
+	EDITTEXT        IDC_COMBO_G2_EDIT,24,101,124,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_G2_COLOR,155,100,48,130,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+
+    GROUPBOX        "3rd group",IDC_STATIC,15,155,198,55
+    EDITTEXT        IDC_COMBO_G3_EDIT,24,168,124,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_G3_COLOR,154,168,48,130,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+
+    GROUPBOX        "4th group",IDC_STATIC,15,221,198,55
+    EDITTEXT        IDC_COMBO_G4_EDIT,24,235,124,14,ES_AUTOHSCROLL
+	COMBOBOX        IDC_COMBO_G4_COLOR,155,235,48,130,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+
+
+	GROUPBOX        "Colorize the block",IDC_STATIC,15,288,199,93
+    CONTROL         "[ ]",IDC_CHECK_CROCHET,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,309,23,10
+    COMBOBOX        IDC_COMBO_CROCHET_COLOR,55,308,48,130,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "<>",IDC_CHECK_LOSANGE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,334,27,10
+    COMBOBOX        IDC_COMBO_LOSANGE_COLOR,55,333,48,130,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "( )",IDC_CHECK_PARENTHESE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,309,23,10
+    COMBOBOX        IDC_COMBO__PARENTHESE_COLOR,156,308,48,130,
+                    CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "{ }",IDC_CHECK_ACCOLADE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,333,25,10
+    COMBOBOX        IDC_COMBO_ACCOLADE_COLOR,156,332,48,130,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         """ """,IDC_CHECK_DBL_COTE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,359,23,10
+    COMBOBOX        IDC_COMBO_DBL_COTE_COLOR,55,358,48,130,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Bold",IDC_CHECK_G1_BOLD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,57,29,10
+    CONTROL         "Italic",IDC_CHECK_G1_ITALIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,87,57,31,10
+    CONTROL         "Bold",IDC_CHECK_G2_BOLD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,23,122,29,10
+    CONTROL         "Italic",IDC_CHECK_G2_ITALIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,87,122,31,10
+    CONTROL         "Bold",IDC_CHECK_G3_BOLD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,191,29,10
+    CONTROL         "Italic",IDC_CHECK_G3_ITALIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,87,191,31,10
+    CONTROL         "Bold",IDC_CHECK_G4_BOLD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,257,29,10
+    CONTROL         "Italic",IDC_CHECK_G4_ITALIC,"Button",BS_AUTOCHECKBOX,87,
+                    257,31,10
+    PUSHBUTTON      "Dock",IDC_DOCK_BUTTON,162,5,50,14,BS_FLAT
+END
+

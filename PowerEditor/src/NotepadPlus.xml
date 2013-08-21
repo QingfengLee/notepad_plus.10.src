@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<NotepadPlus>
+	<GUIConfig>
+		<!-- 3 status : "large", "small" and "hide"-->
+		<ToolBar status = "large"/>
+		<!-- 2 status : "show" and "hide"-->
+		<StatusBar status = "show"/>
+		<!-- 2 positions : "horizontal" and "vertical"-->
+		<ScintillaViewsSplitter position = "vertical"/>
+		<ScintillaComponent>
+			<!-- 2 status : "show" and "hide" ; 2 positions : "docked" and "undocked"-->
+			<UserDefineDlg status="hide" position = "undocked">
+			</UserDefineDlg>
+			<Margin>
+				<LineNumber status01 = "show"
+						  status02 = "show"/>
+				<BookMark status01 = "show"
+                                               status02 = "show"/>
+				<!-- 4 styles : "simple", "arrow", "circle" and "box"-->
+				<Folder status01 = "show" style01 = "box"
+					   status02 = "show" style02 = "box"/>
+			</Margin>
+
+			<InvisibleChars status01 = "show"
+					     status02 = "show"/>
+
+			<IndentGuideLine status01 = "show"
+						status02 = "show"/>
+		</ScintillaComponent>
+	</GUIConfig>
+
+	<Language>
+		<C>
+		</C>
+		<Cpp>
+		</Cpp>
+		<RC>
+		</RC>
+		<Java>
+		</Java>
+		<HTML>
+		</HTML>
+		<M30>
+		</M30>
+		<PCOM>
+		</PCOM>
+	</Language>
+</NotepadPlus>

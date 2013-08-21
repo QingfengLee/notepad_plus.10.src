@@ -1,0 +1,406 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html lang="en">
+
+<head>
+
+<title>Winsock Programmer's FAQ: Articles: Dealing with Firewalls</title>
+
+<link rel="Stylesheet" type="text/css" href="../faq.css">
+
+</head>
+
+<body bgcolor="#ffffee" text="#000000" link="#491e00" vlink="#7d2e01" alink="#da7417">
+
+
+<!--  ---- Header Bar ----  -->
+
+<table border="0" width="95%" bgcolor="#006000" cellpadding="5" cellspacing="3" align="center">
+	<tr>
+		<td align="center" bgcolor="#e0e0c0">
+				<a href="../articles/passing-sockets.html">
+						<img src="../bitmaps/ltarrow.gif" 
+						alt="" width=20 height=20 border=0></a>
+		</td>
+
+
+		<td align="center">
+			<font face=Verdana,Arial,Helvetica color="#ffffee">
+				<p align=center class=bigger3><b>
+				Winsock Programmer's FAQ<br>
+				Section 7: Articles: Dealing with Firewalls<br>
+				</b></p>
+			</font>	
+		</td>
+
+		<td align="center" bgcolor="#e0e0c0">
+				<a href="../articles/othersys.html">
+						<img src="../bitmaps/rtarrow.gif" 
+						alt="" width=20 height=20 border=0></a>
+		</td>
+	</tr>
+</table>
+
+
+<!--  ---- Body Table ----  -->
+
+<table width="95%" border="0" cellpadding="10">
+	<tr valign="top">
+		<td>
+
+<H3>Dealing with Firewalls</H3>
+
+<p><i>by Warren Young</i></p>
+
+<p>Firewalls are everywhere. It seems like everyone's company LAN is
+connected to the Internet these days, and nearly all those companies have
+prudently put their LAN behind some kind of firewall. So, it's likely
+that some day someone will try to use your client or server across their
+firewall. Depending on a number of factors, this may work without trouble,
+or you may run into many problems trying to make this work. This article
+will discuss these problems and some of the solutions to them.</p>
+
+
+
+<h4>How Your Protocol Affects Firewalls</h4>
+
+<p>For the greatest chances of working through a firewall without trouble,
+you should use a simple single-connection TCP-based protocol: the client
+connects to the server, sends data and gets replies on that connection,
+and when finished closes the connection.</p>
+
+<p>For an example of a protocol that causes problems with firewalls,
+consider FTP. FTP has two connections: a control connection and a data
+connection. The control connection is always present, but the data
+connection is brought up only when the server needs to send bulk data
+to the client, such as a directory listing or the contents of a file.</p>
+
+<p>In traditional "active" mode, the FTP server connects back to the
+client to establish the data connection. The problem is, the client
+has to tell the server which port number it's listening on for the data
+connection. When the client is behind a firewall, the server believes
+it's connected to the firewall machine, so it tries to connect to the
+given port on the firewall, which isn't listening for the connection. The
+server gets rejected, and the client sits waiting forever for the server
+to connect to it.</p>
+
+<p>There are two solutions to this problem. The first is for the client
+to use "passive" mode: the client connects to the server for the data
+connection, instead of the server connecting to the client. The other
+solution is for the firewall to know the FTP protocol, so it can recognize
+the FTP data connection port number within the protocol, rewrite it to
+a port the firewall can use, and then listen on that port.  When the
+FTP server connects to the firewall, the firewall can then connect to
+the FTP client inside the firewall and begin relaying data.</p>
+
+<p>Unless you're writing a client for a well-known protocol, you should
+try to write it so the firewall doesn't have to know your protocol
+in order to forward packets. For the longest time, RealAudio clients
+didn't work behind firewalls because of the way Real Networks designed
+the protocol. Today that isn't a problem, but it took Real years to
+achieve the success they needed to get firewall vendors to add support
+for their protocol.</p>
+
+
+<h4>Clients Behind Masquerading Firewalls</h4>
+
+<p>Let's assume that your client uses a simple single-connection TCP-based
+protocol. There are still potential problems ahead: the type of firewall
+can make a difference to your client.</p>
+
+<p>From a client program's perspective, the simplest kind of firewall
+is the masquerading firewall. They appear to hosts inside the firewall
+like a simple gateway to the Internet.</p>
+
+<p>A masquerading firewall is fairly tricky from a technical
+perspective. Packets destined for the Internet go to the masquerading
+firewall, which changes the internal IP address and source port number of
+outbound packets to the firewall machine's IP address and a generated port
+number. Then they pass the packet outside to the Internet and wait for the
+reply. When the reply comes back, the firewall recognizes the port number
+it generated, and uses that to translate the port and IP back to the
+"internal" values, then passes it on to the host inside the LAN.</p>
+
+<p>If your protocol is simple, your program should work through a
+masquerading firewall without problems. The only likely problem you'll
+run into is if the firewall blocks outbound connections to all but
+a few select ports. In this case, you'll have to ask the firewall's
+administrator to open up your port. This is discussed in more detail
+below in the "Firewalls, Politics and Paranoia" section.</p>
+
+
+
+<h4>Clients Behind SOCKS Firewalls</h4>
+
+<p>If a firewall doesn't do masquerading, it will usually allow clients
+to get through it via the <a href="../../rfcs/useful.html#rfc1928">SOCKS
+protocol</a>. SOCKS allows a client program on a protected internal
+network to ask the firewall to act as a relay between it and a host
+outside the firewall.</p>
+
+<p>SOCKS version 4 is the "basic" protocol. The main difference between
+masquerading and SOCKS v4 is that masquerading is transparent, whereas
+with SOCKS you have to modify your program to make SOCKS requests to
+get through the firewall. (SOCKS v4 also has a few features masquerading
+doesn't, like basic plaintext authentication, but this is a minor
+issue.)</p>
+
+<p>SOCKS version 5 builds on that base and adds UDP support, end-to-end
+encryption, and secure logins. These latter two features make it much
+more secure than SOCKS v4 and masquerading, so it's becoming quite
+common. Few firewalls require encryption to get through, but quite a
+few are requiring SOCKS v5 logins, to curtail rogue programs getting
+through the firewall.</p>
+
+<p>You can find out more about SOCKS via the following links:</p>
+
+<ul>
+	<li>NEC's <a href="http://www.socks.nec.com/">SOCKS
+	site</a> <img src="../bitmaps/waist-dot.gif" alt="-" width=7 height=6 hspace=2> NEC offers the <a
+	href="http://www.socks.nec.com/reference/socks5.html">SOCKS
+	reference implementation</a>, the <a
+	href="http://www.socks.nec.com/reference/sockscap.html">SOCKSCap</a>
+	external SOCKSifier (both free for personal and
+	educational use), a lot of good info, and some
+	commercial products, including a commercial <a
+	href="http://www.eborder.nec.com/products/sdk.htm">SDK</a>
+	for SOCKSifying your applications.
+
+	<li>Stardust's <a
+	href="http://www.stardust.com/policy/socks.htm">SOCKS Technical
+	Resources</a> <img src="../bitmaps/waist-dot.gif" alt="-" width=7 height=6 hspace=2> Lots of good links.
+
+	<li>Stardust's <a
+	href="http://www.stardust.com/policy/whitepapers/socks6.pdf">SOCKS:
+	The Border Service Enabler</a> technical backgrounder <img src="../bitmaps/waist-dot.gif" alt="-" width=7 height=6 hspace=2>
+	This looks like a good introduction to the SOCKS protocol.
+</ul>
+
+<p>NEC's SOCKSCap allows almost any Winsock program to run over a SOCKS
+firewall with no changes to the application. (There are other vendors
+that offer SOCKSifiers, and a few non-Microsoft Winsock stacks are
+SOCKSified.) The problem with SOCKSCap is that your users must set up
+SOCKSCap by hand, and they must run your program <i>through</i> the
+SOCKSifier. It's more user-friendly to implement the SOCKS protocol
+within your program.</p>
+
+<p>SOCKS does let you get around some of the limitations imposed by a
+masquerading firewall. For one thing, you can do a "remote bind": ask
+the firewall to listen on a port for you, and pass connections in to
+your program. SOCKS v5's UDP support may also prove helpful to you. Just
+beware that even SOCKS firewalls can limit your design choices.</p>
+
+
+
+<h4>Firewalls, Politics and Paranoia</h4>
+
+<p>Technical people often look at a firewall as a technical solution
+to a technical problem. In fact, a firewall is a political construct.
+Like a country's border, it exists to protect an organization's turf
+from invaders. The permeability of a network firewall depends on the
+paranoia level of the people who control the firewall: there's a lot to
+be paranoid about in today's Internet.</p>
+
+<p>Many firewalls are set up to block all outbound connections except
+to a very few ports. For example, the firewall might be set up to
+allow outbound connections on ports 80, 21 and 25 only (web, FTP and
+outbound email). If your application uses a port that the firewall blocks,
+you will have to persuade the network administrators to open up that
+port on <i>their</i> firewall. Network admins are often very territorial
+about their firewalls. Getting your way will require a certain amount
+of political finesse.</p>
+
+<p>The administrators at such a site have decided that they'd rather
+open ports on a case-by-case basis than block ports as new security risks
+get discovered. You have to convince the admins to open up your port. I
+suggest that you prepare a written argument explaining what your program
+does, why it does it, and an analysis of potential risks. Don't fudge
+on the argument: be completely honest and open. Present the benefits of
+the application separately; you're not trying to convince the admins to
+use the program, just to show that the application is useful to users on
+their network. Try to get some of those users to speak with the network
+admins directly to help you press your case.</p>
+
+<p>Why a written argument? Partly because it shows professionalism,
+partly because you might not be able to speak with the admins directly,
+and partly because it forces you to clarify and organize your thoughts.
+If you just call the admin up on the phone and make up your arguments as
+you speak with him, you may just come across as <i>argumentative</i>.
+Even if you do end up speaking with the administrator directly, having
+a written argument to refer to will help you to make your case.</p>
+
+<p>Some people suggest a different tactic: change your program so that it
+sends its packets out on a port that's open on even the most restrictive
+firewalls. Because some firewalls examine the contents of packets to
+make sure they're legitimate, some people even suggest encapsulating
+your data in the protocol that usually runs on that port. For example,
+you could send your data out on port 80, and put your program data in
+the payload area of HTTP packets.</p>
+
+<p>To extend the "politics" analogy, this is the "smuggling" tactic. Just
+like smuggling in the real world, it's likely to get you into trouble. You
+won't go to jail for it, but you might generate a lot of antagonism
+toward your program; network admins have been known to band together
+and ban programs that annoy them.</p>
+
+
+
+<h4>Servers Behind Firewalls</h4>
+
+<p>Let's say you've written a server program. It works fine, but then
+someone tries to use it behind a firewall, while the clients are on the
+other side of the firewall. This is very common when the server is
+running on someone's LAN, but they want to access your server from out
+on the wider Internet.</p>
+
+<p>The easiest solution is simply to move the server outside the firewall,
+but most network administrators are extremely reluctant to do this. Common
+reasons are:</p>
+
+<ol>
+	<li>Most of the users are inside the firewall: the users outside are
+	the exception, not the rule.<img src="../bitmaps/dot-clear.gif" alt="" width=1 height=30 align=top> <br clear=all>
+
+	<li>The firewall setup doesn't allow anything outside the
+	firewall.<img src="../bitmaps/dot-clear.gif" alt="" width=1 height=30 align=top> <br clear=all>
+
+	<li>The firewall is administered by some other party, like the
+	company's ISP, and they won't allow you to put your server outside
+	their firewall.<img src="../bitmaps/dot-clear.gif" alt="" width=1 height=30 align=top> <br clear=all>
+
+	<li>If you can put the server behind the firewall, the firewall can
+	control access to the server: it's an extra layer of protection
+	between your server and the big bad Internet.<img src="../bitmaps/dot-clear.gif" alt="" width=1 height=30 align=top> <br clear=all>
+
+	<li>It's axiomatic that you should not expose any more services
+	to the outside world than you have to. Some network admins will
+	stubbornly fall back on this despite any arguments you can muster,
+	no matter how logical.<img src="../bitmaps/dot-clear.gif" alt="" width=1 height=30 align=top> <br clear=all>
+</ol>
+
+<p>If you run into this, the solution is to get the firewall administrator
+to set up "network address translation". NAT is a term for several
+vaguely-related techniques, two of which you can use to make your server
+visible outside the firewall: port forwarding and address forwarding.</p>
+
+<p>To understand NAT, consider the following LAN setup: the internal
+LAN hosts use the private IP address block 10.x.x.x. Let's say the host
+your server is running on has the internal IP address 10.1.2.3. Their
+ISP has assigned this company the public IP subnet 123.4.5.{1-15}. The
+firewall has at least two addresses: let's say 123.4.5.1 on the outside,
+and 10.1.1.1 on the inside.</p>
+
+<p>Address forwarding is the simplest, but also the riskier of the two
+approaches. To set up address forwarding for our example LAN, the firewall
+could assign 123.4.5.2 to your server. Whenever requests come in on that
+address, it quietly translates the destination address to 10.1.2.3 and
+the source address to 10.1.1.1, and then it passes the packet inside
+the LAN for your server to handle. When your server replies, it believes
+it is replying to the firewall at 10.1.1.1. The firewall gets the reply
+packet and translates the source address to 123.4.5.2 and the destination
+address to that of the host that made the initial request. Then it sends
+the packet out onto the Internet which routes the reply back to the
+client.</p>
+
+<p>The problem with address translation is that if your server host has
+any security holes, the firewall will let anyone outside break in through
+those holes. Once they're inside your server, they're also effectively
+inside the LAN, so the firewall's protection is totally gone.</p>
+
+<p>The more secure NAT technology is port translation. Let's say your
+server uses port 1234. When you set up port translation on the firewall,
+it begins listening for packets on that port, which it forwards inside
+the firewall to your server. This is more secure because it only exposes
+that one port to the outside world.</p>
+
+<p>Sometimes address and port translation are combined. Let's say the
+firewall only has one outside IP address available to it, and that
+you have several servers inside the LAN that use the same port. The
+firewall's NAT features may allow it to listen on ports 2000 through 2007
+and translate packets coming in to each of those ports to different hosts
+inside the LAN, each with the same port, like your server's 1234.</p>
+
+<p>Not all of these options are available on all firewalls, and the
+network adminstrator might not know how to use these features even if
+they are present. Or, they may simply be unwilling to let your server be
+visible from outside the firewall. Just like with the political issues
+with clients discussed above, resist the temptation to piggyback your
+protocol on top of an "approved" port and protocol, unless the firewall
+administrator gives you permission.</p>
+
+
+
+<h4>Conclusion</h4>
+
+<p>This review of firewall technologies, problems and solutions is
+limited to my own experience. If you've run into other types of
+firewalls or other problems getting through firewalls, please <a
+href="mailto:tangent@cyberport.com">drop me a line</a> with info about
+the problem and I'll try to add info on getting around the problem to
+this article.</p>
+
+
+
+<p><font size=-1>Copyright &copy; 2000 by Warren Young.
+All rights reserved.</font></p>
+
+
+		</td>
+	</tr>
+</table>
+
+
+<!--  ---- Document Footer ----  -->
+
+<hr noshade size=1 color=#404040>
+
+<table cellpadding=5 cellspacing=0 border=0 width=95% align=center> 
+	<tr>
+		<td align=left>
+		    <a href="../articles/passing-sockets.html">&lt;&lt; Passing Sockets Between Processes</a>
+		</td>
+
+		<td align=right>
+		    <a href="../articles/othersys.html">Winsock for Non-Windows Systems &gt;&gt;</a>
+		</td>
+	</tr>
+
+	<tr>
+		<td align=left>
+			<i>Last modified on 22 September 2001 at 23:48 UTC-7</i>
+		</td>
+
+		<td align=right>
+			<font size=-1>Please send corrections to <a href="mailto:tangent@cyberport.com">tangent@cyberport.com</a>.</font>
+		</td>
+	</tr>	
+</table>	
+
+<table cellpadding=5 cellspacing=0 border=0 width=95% align=center> 
+	<tr>
+		<td align=left width=33%>
+			<font size=-1>
+				<a href="../index.html"><b>&lt;</b> Go to the main FAQ page</a>
+			</font>
+		</td>
+
+		<td width=33%>
+			<font size=-1>
+			<center>
+				<a href="http://www.cyberport.com/~tangent/programming"><b>&lt;&lt;</b> Go to my Programming pages</a>
+			</center>
+			</font>
+		</td>
+
+		<td align=right width=33%>
+			<font size=-1>
+				<a href="http://www.cyberport.com/~tangent/"><b>&lt;&lt;&lt;</b> Go to my Home Page</a>
+			</font>
+		</td>
+	</tr>	
+</table>	
+
+
+</body>
+</html>
+
+

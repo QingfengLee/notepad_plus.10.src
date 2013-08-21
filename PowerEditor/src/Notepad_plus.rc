@@ -1,0 +1,308 @@
+//this file is part of notepad++
+//Copyright (C)2003 Don HO ( donho@altern.org )
+//
+//This program is free software; you can redistribute it and/or
+//modify it under the terms of the GNU General Public License
+//as published by the Free Software Foundation; either
+//version 2 of the License, or (at your option) any later version.
+//
+//This program is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with this program; if not, write to the Free Software
+//Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_M30ICON             ICON                    "icons\\m30.ico"
+IDI_NEW_OFF_ICON        ICON                    "icons\\new_off.ico"
+IDI_OPEN_OFF_ICON       ICON                    "icons\\open_off.ico"
+IDI_SAVE_OFF_ICON       ICON                    "icons\\save_off.ico"
+IDI_SAVEALL_OFF_ICON    ICON                    "icons\\saveall_off.ico"
+IDI_CLOSE_OFF_ICON      ICON                    "icons\\supp_off.ico"
+IDI_CLOSEALL_OFF_ICON   ICON                    "icons\\suppall_off.ico"
+IDI_CUT_OFF_ICON        ICON                    "icons\\cut_off.ico"
+IDI_COPY_OFF_ICON       ICON                    "icons\\dupli_off.ico"
+IDI_PASTE_OFF_ICON      ICON                    "icons\\paste_off.ico"
+IDI_UNDO_OFF_ICON       ICON                    "icons\\undo_off.ico"
+IDI_REDO_OFF_ICON       ICON                    "icons\\redo_off.ico"
+IDI_FIND_OFF_ICON       ICON                    "icons\\find_off.ico"
+IDI_REPLACE_OFF_ICON    ICON                    "icons\\findrep_off.ico"
+IDI_ZOOMIN_OFF_ICON      ICON                    "icons\\zoomIn_off.ico"
+IDI_ZOOMOUT_OFF_ICON      ICON                    "icons\\zoomOut_off.ico"
+IDI_VIEW_UD_DLG_OFF_ICON   ICON           "icons\\userDefineDlg_off.ico"
+IDI_VIEW_ALL_CHAR_OFF_ICON  ICON            "icons\\allChars_off.ico"
+IDI_VIEW_INDENT_OFF_ICON   ICON			"icons\\indentGuide_off.ico"
+IDI_PRINT_OFF_ICON      ICON                    "icons\\imprim_off.ico"
+
+IDI_NEW_ON_ICON         ICON                    "icons\\new_on.ico"
+IDI_OPEN_ON_ICON        ICON                    "icons\\open_on.ico"
+IDI_SAVE_ON_ICON        ICON                    "icons\\save_on.ico"
+IDI_SAVEALL_ON_ICON     ICON                    "icons\\saveall_on.ico"
+IDI_CLOSE_ON_ICON       ICON                    "icons\\supp_on.ico"
+IDI_CLOSEALL_ON_ICON    ICON                    "icons\\suppall_on.ico"
+IDI_CUT_ON_ICON         ICON                    "icons\\cut_on.ico"
+IDI_COPY_ON_ICON        ICON                    "icons\\dupli_on.ico"
+IDI_PASTE_ON_ICON       ICON                    "icons\\paste_on.ico"
+IDI_UNDO_ON_ICON        ICON                    "icons\\undo_on.ico"
+IDI_REDO_ON_ICON        ICON                    "icons\\redo_on.ico"
+IDI_FIND_ON_ICON        ICON                    "icons\\find_on.ico"
+IDI_REPLACE_ON_ICON     ICON                    "icons\\findrep_on.ico"
+IDI_ZOOMIN_ON_ICON      ICON                    "icons\\zoomIn_on.ico"
+IDI_ZOOMOUT_ON_ICON      ICON                    "icons\\zoomOut_on.ico"
+IDI_VIEW_UD_DLG_ON_ICON   ICON           "icons\\userDefineDlg_on.ico"
+IDI_VIEW_ALL_CHAR_ON_ICON  ICON            "icons\\allChars_on.ico"
+IDI_VIEW_INDENT_ON_ICON   ICON			"icons\\indentGuide_on.ico"
+IDI_PRINT_ON_ICON       ICON                    "icons\\imprim_on.ico"
+
+//IDI_NEW_DISABLE_ICON         ICON                    "icons\\new_on.ico"
+//IDI_OPEN_DISABLE_ICON        ICON                    "icons\\open_on.ico"
+IDI_SAVE_DISABLE_ICON        ICON                    "icons\\save_dis.ico"
+IDI_SAVEALL_DISABLE_ICON     ICON                    "icons\\saveall_dis.ico"
+//IDI_CLOSE_DISABLE_ICON       ICON                    "icons\\supp_on.ico"
+//IDI_CLOSEALL_DISABLE_ICON    ICON                    "icons\\suppall_on.ico"
+IDI_CUT_DISABLE_ICON         ICON                    "icons\\cut_dis.ico"
+IDI_COPY_DISABLE_ICON        ICON                    "icons\\dupli_dis.ico"
+IDI_PASTE_DISABLE_ICON       ICON                    "icons\\paste_dis.ico"
+IDI_UNDO_DISABLE_ICON        ICON                    "icons\\undo_dis.ico"
+IDI_REDO_DISABLE_ICON        ICON                    "icons\\redo_dis.ico"
+//IDI_FIND_DISABLE_ICON        ICON                    "icons\\find_on.ico"
+//IDI_REPLACE_DISABLE_ICON     ICON                    "icons\\findrep_on.ico"
+//IDI_PRINT_DISABLE_ICON       ICON                    "icons\\imprim_on.ico"
+IDI_SAVED_ICON           ICON                    "icons\\saved.ico"
+IDI_UNSAVED_ICON       ICON                    "icons\\unsaved.ico"
+IDI_READONLY_ICON       ICON                    "icons\\readonly.ico"
+
+IDC_MY_CUR       CURSOR                    "cursors\\CASPERMA.CUR"
+IDC_UP_ARROW       CURSOR                    "cursors\\up.cur"
+IDC_DRAG_TAB       CURSOR                    "cursors\\drag.cur"
+IDC_DRAG_INTERDIT_TAB       CURSOR         "cursors\\drag_interdit.cur"
+IDC_DRAG_PLUS_TAB       CURSOR         "cursors\\drag_plus.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_M30_MENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                IDM_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            IDM_FILE_OPEN
+        MENUITEM "&Close\tCtrl+C",              IDM_FILE_CLOSE
+        MENUITEM "C&lose All",                  IDM_FILE_CLOSEALL
+        MENUITEM "&Save\tCtrl+S",               IDM_FILE_SAVE
+	MENUITEM "Sav&e All",               IDM_FILE_SAVEALL
+        MENUITEM "Save &As...",                 IDM_FILE_SAVEAS
+	MENUITEM SEPARATOR
+	MENUITEM "Print"					IDM_FILE_PRINT
+	MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_FILE_EXIT
+    END
+   
+	POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               IDM_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                IDM_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               IDM_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              IDM_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                IDM_EDIT_DELETE
+        MENUITEM "Select A&ll\tCtrl+A",         IDM_EDIT_SELECTALL
+		MENUITEM SEPARATOR
+		MENUITEM "&Find...\tCtrl+F",                IDM_EDIT_FIND
+		MENUITEM "Find &Next\tF3",                IDM_EDIT_FINDNEXT
+        MENUITEM "Replace...\tCtrl+H",             IDM_EDIT_REPLACE
+    END                                          
+	
+	POPUP "&View"
+	BEGIN
+		POPUP "Tool Bar"
+		BEGIN
+			MENUITEM "Hide me",               	IDM_VIEW_TOOLBAR_HIDE	
+			MENUITEM "Reduce me",               IDM_VIEW_TOOLBAR_REDUCE	
+			MENUITEM "Enlarge me",               IDM_VIEW_TOOLBAR_ENLARGE
+		END
+		
+		POPUP "Tab Bar"
+		BEGIN
+			MENUITEM "Lock me (No Drag 'N' Drop)",               IDM_VIEW_LOCKTABBAR
+			MENUITEM "Draw me",               IDM_VIEW_DRAWTABBAR
+		END
+
+		MENUITEM "Status Bar",               IDM_VIEW_STATUSBAR
+		MENUITEM SEPARATOR
+		
+		MENUITEM "Line Number Margin",       IDM_VIEW_LINENUMBER
+		MENUITEM "BookMark Margin",           IDM_VIEW_SYMBOLMARGIN
+		
+		POPUP "Folder Margin"
+		BEGIN
+			MENUITEM "Show me",               IDM_VIEW_FOLDERMAGIN
+			MENUITEM SEPARATOR
+			MENUITEM "Simple Style",               IDM_VIEW_FOLDERMAGIN_SIMPLE
+			MENUITEM "Arrow Style",               IDM_VIEW_FOLDERMAGIN_ARROW
+			MENUITEM "Circle Tree Style",         IDM_VIEW_FOLDERMAGIN_CIRCLE
+			MENUITEM "Box Tree Style",            IDM_VIEW_FOLDERMAGIN_BOX
+		END
+		MENUITEM SEPARATOR
+		MENUITEM "Show all characters"          IDM_VIEW_ALL_CHARACTERS
+		MENUITEM "Show Indent guide"           IDM_VIEW_INDENT_GUIDE
+		MENUITEM SEPARATOR
+		MENUITEM "Zoom &in",               IDM_VIEW_ZOOMIN
+		MENUITEM "Zoom &out",               IDM_VIEW_ZOOMOUT
+	END
+
+	POPUP "&Tools"
+	BEGIN
+		MENUITEM "Convertor",               	IDM_EXECUTE_CONVERTOR
+		//MENUITEM "Test",               	IDM_EXECUTE_EDITVAR
+	END
+		
+	POPUP "Language"
+	BEGIN
+		MENUITEM "User Define Dialog",               	IDM_LANG_USER_DLG
+		MENUITEM SEPARATOR
+		
+		MENUITEM "C"					IDM_LANG_C
+		MENUITEM "C++"				IDM_LANG_CPP
+		MENUITEM "rc resource file"					IDM_LANG_RC
+		MENUITEM "Java"				IDM_LANG_JAVA
+		MENUITEM "Makefile"				IDM_LANG_MAKEFILE
+		
+		MENUITEM "HTML"				IDM_LANG_HTML
+		MENUITEM "XML"				IDM_LANG_XML
+		MENUITEM "PHP"					IDM_LANG_PHP
+		MENUITEM "LaTeX"				IDM_LANG_LATEX
+		
+		MENUITEM "User Define"			IDM_LANG_USER
+		MENUITEM "Normal Text"			IDM_LANG_TEXT
+	END
+	
+	MENUITEM "About..."			IDM_ABOUT
+
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FIND_REPLACE_DLG DIALOG 36, 44, 285, 94
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "Replace"
+FONT 8, "MS Shell Dlg"
+BEGIN
+	LTEXT           "Find what:",-1,5,7,55,8
+	COMBOBOX        IDFINDWHAT,60,5,125,50,WS_TABSTOP | CBS_DROPDOWN | CBS_AUTOHSCROLL
+	LTEXT           "Re&place with:",ID_STATICTEXT_REPLACE,5,25,55,8
+	COMBOBOX        IDREPLACEWITH,60,23,125,50,WS_TABSTOP | CBS_DROPDOWN | CBS_AUTOHSCROLL
+	AUTOCHECKBOX    "Match &whole word only", IDWHOLEWORD,5,42,110,10, WS_GROUP | WS_TABSTOP
+	AUTOCHECKBOX    "Match &case", IDMATCHCASE,5,54,110,10, WS_GROUP | WS_TABSTOP
+	AUTOCHECKBOX    "Regular &expression", IDREGEXP,5,66,110,10, WS_GROUP | WS_TABSTOP
+	AUTOCHECKBOX    "Wrap aroun&d", IDWRAP,5,78,110,10, WS_GROUP | WS_TABSTOP
+	//AUTOCHECKBOX    "Transform &backslash expressions", IDUNSLASH,5,90,120,10, WS_GROUP | WS_TABSTOP
+	
+	GROUPBOX        "Direction", -1, 125,42,60,34,WS_GROUP
+	AUTORADIOBUTTON "&Up",IDDIRECTIONUP,130,50,45,12, WS_GROUP
+	AUTORADIOBUTTON "&Down",IDDIRECTIONDOWN,130,62,45,12
+
+	DEFPUSHBUTTON   "Find Next",IDOK,190,5,90,14,WS_GROUP
+	PUSHBUTTON      "&Replace",IDREPLACE,190,23,90,14
+	PUSHBUTTON      "Replace &All",IDREPLACEALL,190,41,90,14
+	//PUSHBUTTON      "Replace in &Selection",IDREPLACEINSEL,190,59,90,14
+	PUSHBUTTON      "Close",IDCANCEL,190,59,90,14//,190,77,90,14
+END
+
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 279, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU | WS_BORDER
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT         "NotePad++ 1.0 beta",IDC_STATIC,21,18,84,11
+					
+    GROUPBOX        "Licence",IDC_STATIC,19,65,231,121,BS_CENTER
+    DEFPUSHBUTTON      "Okey",IDOK,106,195,50,14,BS_FLAT,WS_GROUP
+    LTEXT           "Author :",IDC_STATIC,21,33,31,8
+	LTEXT           "Don HO",IDC_STATIC,78,33,25,8
+	LTEXT           "donho@altern.org",IDC_EMAIL_ADDR,107,33,62,8
+	
+    LTEXT           "Home Page :",IDC_STATIC,21,46,47,8
+    LTEXT           "http://notepad-plus.sourceforge.net/",IDC_HOME_ADDR,78,46,126,8
+
+    EDITTEXT        IDC_LICENCE_EDIT,31,79,209,96,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER |WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_M30_ACCELERATORS ACCELERATORS 
+BEGIN
+    //"A",            IDM_EDIT_SELECTALL,     VIRTKEY, CONTROL
+    //"C",            IDM_EDIT_COPY,          VIRTKEY, CONTROL
+    "N",            IDM_FILE_NEW,           VIRTKEY, CONTROL
+    "O",            IDM_FILE_OPEN,          VIRTKEY, CONTROL
+    "S",            IDM_FILE_SAVE,          VIRTKEY, CONTROL
+    //"V",            IDM_EDIT_PASTE,         VIRTKEY, CONTROL
+    //VK_DELETE,      IDM_EDIT_DELETE,        VIRTKEY 
+    //"X",            IDM_EDIT_CUT,           VIRTKEY, CONTROL
+    //"Y",            IDM_EDIT_REDO,          VIRTKEY, CONTROL
+    //"Z",            IDM_EDIT_UNDO,          VIRTKEY, CONTROL
+	"F",            IDM_EDIT_FIND,          VIRTKEY, CONTROL
+	"H",            IDM_EDIT_REPLACE,      VIRTKEY, CONTROL
+	VK_F3,        IDM_EDIT_FINDNEXT,    VIRTKEY
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
