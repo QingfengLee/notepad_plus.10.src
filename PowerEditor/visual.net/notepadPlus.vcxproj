@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Notepad++</ProjectName>
+    <ProjectGuid>{FCF60E65-1B78-4D1D-AB59-4FC00AC8C248}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\src\WinControls\AboutDlg;..\..\scintilla\include;..\include;..\src\WinControls;..\src\WinControls\ImageListSet;..\src\WinControls\OpenSaveFileDialog;..\src\WinControls\SplitterContainer;..\src\WinControls\StaticDialog;..\src\WinControls\TabBar;..\src\WinControls\ToolBar;..\src\MISC\Process;..\src\ScitillaComponent;..\src\MISC\SysMsg;..\src\MISC\FileNamStringSpliter;..\src\WinControls\StatusBar;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+      <OutputFile>$(OutDir)notepadPlus_Debug.exe</OutputFile>
+      <Version>1.0</Version>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)notepadPlus.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\src\WinControls\AboutDlg;..\..\scintilla\include;..\include;..\src\WinControls;..\src\WinControls\ImageListSet;..\src\WinControls\OpenSaveFileDialog;..\src\WinControls\SplitterContainer;..\src\WinControls\StaticDialog;..\src\WinControls\TabBar;..\src\WinControls\ToolBar;..\src\MISC\Process;..\src\ScitillaComponent;..\src\MISC\SysMsg;..\src\MISC\FileNamStringSpliter;..\src\WinControls\StatusBar;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+      <OutputFile>$(OutDir)notepadPlus_Debug.exe</OutputFile>
+      <Version>1.0</Version>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)notepadPlus.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\src\WinControls\AboutDlg;..\..\scintilla\include;..\include;..\src\WinControls;..\src\WinControls\ImageListSet;..\src\WinControls\OpenSaveFileDialog;..\src\WinControls\SplitterContainer;..\src\WinControls\StaticDialog;..\src\WinControls\TabBar;..\src\WinControls\ToolBar;..\src\MISC\Process;..\src\ScitillaComponent;..\src\MISC\SysMsg;..\src\MISC\FileNamStringSpliter;..\src\WinControls\StatusBar;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+      <OutputFile>$(OutDir)notepad++.exe</OutputFile>
+      <Version>1.0</Version>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\src\WinControls\AboutDlg;..\..\scintilla\include;..\include;..\src\WinControls;..\src\WinControls\ImageListSet;..\src\WinControls\OpenSaveFileDialog;..\src\WinControls\SplitterContainer;..\src\WinControls\StaticDialog;..\src\WinControls\TabBar;..\src\WinControls\ToolBar;..\src\MISC\Process;..\src\ScitillaComponent;..\src\MISC\SysMsg;..\src\MISC\FileNamStringSpliter;..\src\WinControls\StatusBar;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerboseLib</ShowProgress>
+      <OutputFile>$(OutDir)notepad++.exe</OutputFile>
+      <Version>1.0</Version>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\WinControls\AboutDlg\AboutDlg.cpp" />
+    <ClCompile Include="..\src\ControlsTab.cpp" />
+    <ClCompile Include="..\src\ScitillaComponent\DocTabView.cpp" />
+    <ClCompile Include="..\src\WinControls\OpenSaveFileDialog\FileDialog.cpp" />
+    <ClCompile Include="..\src\ScitillaComponent\FindReplaceDlg.cpp" />
+    <ClCompile Include="..\src\WinControls\ImageListSet\ImageListSet.cpp" />
+    <ClCompile Include="..\src\Notepad_plus.cpp" />
+    <ClCompile Include="..\src\Parameters.cpp" />
+    <ClCompile Include="..\src\ScitillaComponent\Printer.cpp" />
+    <ClCompile Include="..\src\MISC\Process\Process.cpp" />
+    <ClCompile Include="..\src\ScitillaComponent\ScintillaEditView.cpp" />
+    <ClCompile Include="..\src\WinControls\SplitterContainer\Splitter.cpp" />
+    <ClCompile Include="..\src\WinControls\SplitterContainer\SplitterContainer.cpp" />
+    <ClCompile Include="..\src\WinControls\StaticDialog\StaticDialog.cpp" />
+    <ClCompile Include="..\src\WinControls\StatusBar\StatusBar.cpp" />
+    <ClCompile Include="..\src\MISC\SysMsg\SysMsg.cpp" />
+    <ClCompile Include="..\src\WinControls\TabBar\TabBar.cpp" />
+    <ClCompile Include="..\src\WinControls\ToolBar\ToolBar.cpp" />
+    <ClCompile Include="..\src\WinControls\AboutDlg\URLCtrl.cpp" />
+    <ClCompile Include="..\src\ScitillaComponent\UserDefineDialog.cpp" />
+    <ClCompile Include="..\src\winmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\WinControls\AboutDlg\AboutDlg.h" />
+    <ClInclude Include="..\src\ScitillaComponent\Buffer.h" />
+    <ClInclude Include="..\src\ControlsTab.h" />
+    <ClInclude Include="..\src\ScitillaComponent\DocTabView.h" />
+    <ClInclude Include="..\src\WinControls\OpenSaveFileDialog\FileDialog.h" />
+    <ClInclude Include="..\src\MISC\FileNamStringSpliter\FileNamStringSpliter.h" />
+    <ClInclude Include="..\src\ScitillaComponent\FindReplaceDlg.h" />
+    <ClInclude Include="..\src\WinControls\ImageListSet\ImageListSet.h" />
+    <ClInclude Include="..\src\Notepad_plus.h" />
+    <ClInclude Include="..\src\Parameters.h" />
+    <ClInclude Include="..\src\ScitillaComponent\Printer.h" />
+    <ClInclude Include="..\src\MISC\Process\Process.h" />
+    <ClInclude Include="..\src\ScitillaComponent\ScintillaEditView.h" />
+    <ClInclude Include="..\src\WinControls\SplitterContainer\Splitter.h" />
+    <ClInclude Include="..\src\WinControls\SplitterContainer\SplitterContainer.h" />
+    <ClInclude Include="..\src\WinControls\StaticDialog\StaticDialog.h" />
+    <ClInclude Include="..\src\WinControls\StatusBar\StatusBar.h" />
+    <ClInclude Include="..\src\MISC\SysMsg\SysMsg.h" />
+    <ClInclude Include="..\src\WinControls\TabBar\TabBar.h" />
+    <ClInclude Include="..\src\WinControls\ToolBar\ToolBar.h" />
+    <ClInclude Include="..\src\WinControls\AboutDlg\URLCtrl.h" />
+    <ClInclude Include="..\src\ScitillaComponent\UserDefineDialog.h" />
+    <ClInclude Include="..\src\ScitillaComponent\UserDefineResource.h" />
+    <ClInclude Include="..\src\WinControls\Window.h" />
+    <ClInclude Include="..\src\WinControls\WindowInterface.h" />
+    <ClInclude Include="..\src\ScitillaComponent\colors.h" />
+    <ClInclude Include="..\src\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\cursors\CASPERMA.CUR" />
+    <None Include="..\src\icons\cut_dis.ico" />
+    <None Include="..\src\icons\cut_off.ico" />
+    <None Include="..\src\icons\cut_on.ico" />
+    <None Include="..\src\default_close.ico" />
+    <None Include="..\src\default_new.ico" />
+    <None Include="..\src\default_open.ico" />
+    <None Include="..\src\icons\dupli_dis.ico" />
+    <None Include="..\src\icons\dupli_off.ico" />
+    <None Include="..\src\icons\dupli_on.ico" />
+    <None Include="..\src\icons\find_off.ico" />
+    <None Include="..\src\icons\find_on.ico" />
+    <None Include="..\src\icons\findrep_off.ico" />
+    <None Include="..\src\icons\findrep_on.ico" />
+    <None Include="..\src\hot_close.ico" />
+    <None Include="..\src\hot_new.ico" />
+    <None Include="..\src\hot_open.ico" />
+    <None Include="..\src\icons\icon10.ico" />
+    <None Include="..\src\icons\imp_off.ico" />
+    <None Include="..\src\icons\imprim_off.ico" />
+    <None Include="..\src\icons\imprim_on.ico" />
+    <None Include="..\src\icons\m30.ico" />
+    <None Include="..\src\m30.ico" />
+    <None Include="..\src\icons\new_off.ico" />
+    <None Include="..\src\icons\new_on.ico" />
+    <None Include="..\src\icons\open_off.ico" />
+    <None Include="..\src\icons\open_on.ico" />
+    <None Include="..\src\icons\paste_dis.ico" />
+    <None Include="..\src\icons\paste_off.ico" />
+    <None Include="..\src\icons\paste_on.ico" />
+    <None Include="..\src\icons\readonly.ico" />
+    <None Include="..\src\icons\redo_dis.ico" />
+    <None Include="..\src\icons\redo_off.ico" />
+    <None Include="..\src\icons\redo_on.ico" />
+    <None Include="..\src\icons\save_dis.ico" />
+    <None Include="..\src\icons\save_off.ico" />
+    <None Include="..\src\icons\save_on.ico" />
+    <None Include="..\src\icons\saveall_dis.ico" />
+    <None Include="..\src\icons\saveall_off.ico" />
+    <None Include="..\src\icons\saveall_on.ico" />
+    <None Include="..\src\icons\saved.ico" />
+    <None Include="..\src\icons\supp_off.ico" />
+    <None Include="..\src\icons\supp_on.ico" />
+    <None Include="..\src\icons\suppall_off.ico" />
+    <None Include="..\src\icons\suppall_on.ico" />
+    <None Include="..\src\icons\undo_dis.ico" />
+    <None Include="..\src\icons\undo_off.ico" />
+    <None Include="..\src\icons\undo_on.ico" />
+    <None Include="..\src\icons\unsaved.ico" />
+    <None Include="..\src\cursors\up.cur" />
+    <None Include="..\src\icons\zoomIn_off.ico" />
+    <None Include="..\src\icons\zoomIn_on.ico" />
+    <None Include="..\src\icons\zoomOut_off.ico" />
+    <None Include="..\src\icons\zoomOut_on.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\Notepad_plus.rc" />
+    <ResourceCompile Include="..\src\ScitillaComponent\UserDefineDialog.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

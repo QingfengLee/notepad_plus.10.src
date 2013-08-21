@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SciLexer">
+</Property><Property Name="解决方案文件" Value="E:\MyCode\readCode\notepad_plus.10.src\scintilla\vcbuild\SciLexer.sln">
+</Property><Property Name="Date" Value="2013年8月21日 星期三">
+</Property><Property Name="Time" Value="8:52">
+</Property><Property Name="日志号" Value="3">
+</Property></Properties><Event ErrorLevel="0" Project="SciLexer" Source="SciLexer.vcproj" Description="Converting project file 'E:\MyCode\readCode\notepad_plus.10.src\scintilla\vcbuild\SciLexer.vcproj'.">
+</Event><Event ErrorLevel="2" Project="SciLexer" Source="SciLexer.vcproj" Description="File 'E:\MyCode\readCode\notepad_plus.10.src\scintilla\vcbuild\SciLexer.vcproj' was not found.">
+</Event><Event ErrorLevel="2" Project="SciLexer" Source="SciLexer.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="SciLexer" Source="SciLexer.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SciLexer.sln" Description="解决方案文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="" Source="SciLexer.sln" Description="无需转换">
+</Event></UpgradeLog>

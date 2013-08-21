@@ -348,61 +348,63 @@ void Notepad_plus::synchronise()
 void Notepad_plus::setLangStatus(LangType langType)
 {
     char *pStr;
+	
+
     switch (langType)
     {
 		case L_C:
-			pStr = &("c source file");
+			pStr = "c source file";
             break;
 
 		case L_H:
-			pStr = &("c or c++ header file");
+			pStr = "c or c++ header file";
             break;
 
 		case L_CPP:
-			pStr = &("c++ source file");
+			pStr = "c++ source file";
             break;
 
 		case L_JAVA:
-			pStr = &("Java source file");
+			pStr = "Java source file";
             break;
 
         case L_RC :
-            pStr = &("Windows Resource file");
+            pStr = "Windows Resource file";
             break;
         
         case L_MAKEFILE:
-            pStr = &("Makefile");
+            pStr = "Makefile";
             break;
 
 		case L_HTML:
-            pStr = &("Hyper Text Markup Language File");
+            pStr = "Hyper Text Markup Language File";
             break;
 
         case L_XML:
-            pStr = &("eXtensible Markup Language File");
+            pStr = "eXtensible Markup Language File";
             break;
 
 		case L_PHP:
-            pStr = &("php File");
+            pStr = "php File";
             break;
 
         case L_NFO:
-            pStr = &("NFO File");
+            pStr = "NFO File";
             break;
 
         case L_USER:
-            pStr = &("User Define File");
+            pStr = "User Define File";
             break;
 
         case L_M30 :
-            pStr = &("Macocs Script File");
+            pStr = "Macocs Script File";
             break;
         
         case L_PCOM:
-            pStr = &("PCOM Script File");
+            pStr = "PCOM Script File";
             break;
         default:
-            pStr = &("Normal text File");
+            pStr = "Normal text File";
     }
     _statusBar.setText(pStr);
 }
@@ -1606,7 +1608,7 @@ LRESULT Notepad_plus::runProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lPa
 			if ((HWND)wParam == _hSelf)
 			{
 				_gotFocus = false;
-				::MessageBox(NULL, "chui niké!!!!", "WM_KILLFOCUS", MB_OK);
+				::MessageBox(NULL, "chui nik?!!!", "WM_KILLFOCUS", MB_OK);
 				return TRUE;
 			}
 			return ::DefWindowProc(hwnd, Message, wParam, lParam);

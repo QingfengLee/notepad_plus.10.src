@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{bb1570f7-5763-4a45-8252-b4f16df3c60c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d2220cf4-67c5-437e-aacb-0b905b12b88f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{26a6a050-32df-4edd-ba70-b8cd8359be94}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\WinControls\AboutDlg\AboutDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ControlsTab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScitillaComponent\DocTabView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinControls\OpenSaveFileDialog\FileDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScitillaComponent\FindReplaceDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinControls\ImageListSet\ImageListSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Notepad_plus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Parameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScitillaComponent\Printer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MISC\Process\Process.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScitillaComponent\ScintillaEditView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinControls\SplitterContainer\Splitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinControls\SplitterContainer\SplitterContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinControls\StaticDialog\StaticDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinControls\StatusBar\StatusBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MISC\SysMsg\SysMsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinControls\TabBar\TabBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinControls\ToolBar\ToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WinControls\AboutDlg\URLCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScitillaComponent\UserDefineDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\winmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\WinControls\AboutDlg\AboutDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ScitillaComponent\Buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ControlsTab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ScitillaComponent\DocTabView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WinControls\OpenSaveFileDialog\FileDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MISC\FileNamStringSpliter\FileNamStringSpliter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ScitillaComponent\FindReplaceDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WinControls\ImageListSet\ImageListSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Notepad_plus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ScitillaComponent\Printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MISC\Process\Process.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ScitillaComponent\ScintillaEditView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WinControls\SplitterContainer\Splitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WinControls\SplitterContainer\SplitterContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WinControls\StaticDialog\StaticDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WinControls\StatusBar\StatusBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MISC\SysMsg\SysMsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WinControls\TabBar\TabBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WinControls\ToolBar\ToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WinControls\AboutDlg\URLCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ScitillaComponent\UserDefineDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ScitillaComponent\UserDefineResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WinControls\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WinControls\WindowInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ScitillaComponent\colors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\cursors\CASPERMA.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\cut_dis.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\cut_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\cut_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\default_close.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\default_new.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\default_open.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\dupli_dis.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\dupli_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\dupli_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\find_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\find_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\findrep_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\findrep_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\hot_close.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\hot_new.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\hot_open.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\icon10.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\imp_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\imprim_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\imprim_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\m30.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\m30.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\new_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\new_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\open_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\open_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\paste_dis.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\paste_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\paste_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\readonly.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\redo_dis.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\redo_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\redo_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\save_dis.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\save_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\save_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\saveall_dis.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\saveall_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\saveall_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\saved.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\supp_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\supp_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\suppall_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\suppall_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\undo_dis.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\undo_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\undo_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\unsaved.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\cursors\up.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\zoomIn_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\zoomIn_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\zoomOut_off.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\icons\zoomOut_on.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\Notepad_plus.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\src\ScitillaComponent\UserDefineDialog.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

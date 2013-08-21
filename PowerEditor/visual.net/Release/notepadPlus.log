@@ -1,0 +1,373 @@
+﻿生成启动时间为 2013/8/21 星期三 11:04:21。
+     1>项目“E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\visual.net\notepadPlus.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Release\Notepad++.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“Release\Notepad++.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\src\WinControls\AboutDlg /I..\..\scintilla\include /I..\include /I..\src\WinControls /I..\src\WinControls\ImageListSet /I..\src\WinControls\OpenSaveFileDialog /I..\src\WinControls\SplitterContainer /I..\src\WinControls\StaticDialog /I..\src\WinControls\TabBar /I..\src\WinControls\ToolBar /I..\src\MISC\Process /I..\src\ScitillaComponent /I..\src\MISC\SysMsg /I..\src\MISC\FileNamStringSpliter /I..\src\WinControls\StatusBar /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy /D WIN32 /D NDEBUG /D _WINDOWS /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\WinControls\AboutDlg\AboutDlg.cpp ..\src\ControlsTab.cpp ..\src\ScitillaComponent\DocTabView.cpp ..\src\WinControls\OpenSaveFileDialog\FileDialog.cpp ..\src\ScitillaComponent\FindReplaceDlg.cpp ..\src\WinControls\ImageListSet\ImageListSet.cpp ..\src\Notepad_plus.cpp ..\src\Parameters.cpp ..\src\ScitillaComponent\Printer.cpp ..\src\MISC\Process\Process.cpp ..\src\ScitillaComponent\ScintillaEditView.cpp ..\src\WinControls\SplitterContainer\Splitter.cpp ..\src\WinControls\SplitterContainer\SplitterContainer.cpp ..\src\WinControls\StaticDialog\StaticDialog.cpp ..\src\WinControls\StatusBar\StatusBar.cpp ..\src\MISC\SysMsg\SysMsg.cpp ..\src\WinControls\TabBar\TabBar.cpp ..\src\WinControls\ToolBar\ToolBar.cpp ..\src\WinControls\AboutDlg\URLCtrl.cpp ..\src\ScitillaComponent\UserDefineDialog.cpp ..\src\winmain.cpp
+         AboutDlg.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\WinControls\AboutDlg\AboutDlg.cpp(27): warning C4129: 'T' : unrecognized character escape sequence
+     1>..\src\WinControls\AboutDlg\AboutDlg.cpp(27): warning C4129: 'Y' : unrecognized character escape sequence
+         ControlsTab.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\wincontrols\splittercontainer\Splitter.h(87): warning C4800: 'const DWORD' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\ControlsTab.h(42): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\ControlsTab.h(43): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         DocTabView.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(53): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(67): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(78): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(148): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\UserDefineDialog.h(50): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(215): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(259): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(288): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(296): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+         FileDialog.cpp
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\wincontrols\opensavefiledialog\FileDialog.h(32): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\src\WinControls\OpenSaveFileDialog\FileDialog.cpp(88): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\src\WinControls\OpenSaveFileDialog\FileDialog.cpp(88): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\src\WinControls\OpenSaveFileDialog\FileDialog.cpp(93): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+         FindReplaceDlg.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(53): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(67): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(78): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(148): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\UserDefineDialog.h(50): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(215): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(259): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(288): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(296): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\ScitillaComponent\FindReplaceDlg.cpp(166): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(246) : see declaration of 'stricmp'
+         ImageListSet.cpp
+         Notepad_plus.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(53): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(67): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(78): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(148): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\UserDefineDialog.h(50): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\ScitillaComponent\ScintillaEditView.h(215): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\ScitillaComponent\ScintillaEditView.h(259): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\ScitillaComponent\ScintillaEditView.h(288): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\ScitillaComponent\ScintillaEditView.h(296): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\wincontrols\splittercontainer\Splitter.h(87): warning C4800: 'const DWORD' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\ControlsTab.h(42): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\ControlsTab.h(43): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(122): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(173): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(173): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(179): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(179): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(185): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(185): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\OpenSaveFileDialog\FileDialog.h(32): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\MISC\Process\Process.h(35): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\MISC\Process\Process.h(36): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\MISC\Process\Process.h(57): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\MISC\Process\Process.h(61): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\Notepad_plus.cpp(99): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\src\Notepad_plus.cpp(139): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\src\Notepad_plus.cpp(141): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\src\Notepad_plus.cpp(142): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\src\Notepad_plus.cpp(173): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\src\Notepad_plus.cpp(207): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>..\src\Notepad_plus.cpp(313): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\Notepad_plus.cpp(329): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\Notepad_plus.cpp(330): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\Notepad_plus.cpp(833): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\Notepad_plus.cpp(975): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\src\Notepad_plus.cpp(975): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\src\Notepad_plus.cpp(976): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\src\Notepad_plus.cpp(1145): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>..\src\Notepad_plus.cpp(1171): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\src\Notepad_plus.cpp(1173): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\src\Notepad_plus.cpp(1174): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\src\Notepad_plus.cpp(1689): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+         Parameters.cpp
+         Printer.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(53): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(67): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(78): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(148): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\UserDefineDialog.h(50): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(215): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(259): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(288): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(296): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+         Process.cpp
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\misc\process\process.h(35): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\misc\process\process.h(36): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\misc\process\process.h(57): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\misc\process\process.h(61): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\MISC\Process\Process.cpp(127): warning C4101: 'coderr' : unreferenced local variable
+         ScintillaEditView.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(53): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(67): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(78): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(148): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\UserDefineDialog.h(50): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(215): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(259): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(288): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(296): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\ScitillaComponent\ScintillaEditView.cpp(575): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\src\ScitillaComponent\ScintillaEditView.cpp(575): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\src\ScitillaComponent\ScintillaEditView.cpp(575): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdlib.h(451) : see declaration of '_itoa'
+     1>..\src\ScitillaComponent\ScintillaEditView.cpp(650): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>..\src\ScitillaComponent\ScintillaEditView.cpp(650): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\src\ScitillaComponent\ScintillaEditView.cpp(650): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdlib.h(451) : see declaration of '_itoa'
+         Splitter.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\wincontrols\splittercontainer\Splitter.h(87): warning C4800: 'const DWORD' : forcing value to bool 'true' or 'false' (performance warning)
+         SplitterContainer.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\wincontrols\splittercontainer\Splitter.h(87): warning C4800: 'const DWORD' : forcing value to bool 'true' or 'false' (performance warning)
+         StaticDialog.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+         StatusBar.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+         SysMsg.cpp
+         TabBar.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\WinControls\TabBar\TabBar.cpp(377): warning C4018: '>' : signed/unsigned mismatch
+     1>..\src\WinControls\TabBar\TabBar.cpp(379): warning C4018: '>' : signed/unsigned mismatch
+     1>..\src\WinControls\TabBar\TabBar.cpp(387): warning C4018: '<' : signed/unsigned mismatch
+         ToolBar.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+         URLCtrl.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\src\WinControls\AboutDlg\URLCtrl.cpp(84): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+         UserDefineDialog.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\UserDefineDialog.h(50): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(53): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(67): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(78): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(148): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(215): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(259): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(288): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\ScintillaEditView.h(296): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+         Generating Code...
+         Compiling...
+         winmain.cpp
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\WinControls\Window.h(69): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(53): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(67): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(78): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\Buffer.h(148): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\scitillacomponent\UserDefineDialog.h(50): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\ScitillaComponent\ScintillaEditView.h(215): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\ScitillaComponent\ScintillaEditView.h(259): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\ScitillaComponent\ScintillaEditView.h(288): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\src\ScitillaComponent\ScintillaEditView.h(296): warning C4800: 'LRESULT' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\wincontrols\splittercontainer\Splitter.h(87): warning C4800: 'const DWORD' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\ControlsTab.h(42): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\ControlsTab.h(43): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(122): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(173): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(173): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(179): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(179): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(185): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>e:\mycode\readcode\notepad_plus.10.src\powereditor\src\Notepad_plus.h(185): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+     1>..\src\winmain.cpp(74): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdlib.h(867) : see declaration of 'itoa'
+     1>..\src\winmain.cpp(75): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(110) : see declaration of 'strcat'
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /l"0x0409" /nologo /fo"Release\Notepad_plus.res" ..\src\Notepad_plus.rc 
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /l"0x0409" /nologo /fo"Release\UserDefineDialog.res" ..\src\ScitillaComponent\UserDefineDialog.rc 
+       Link:
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\notepad++.exe" /VERBOSE:Lib /VERSION:"1.0" /INCREMENTAL:NO /NOLOGO comctl32.lib shlwapi.lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Notepad++.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\bin\Notepad++.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\bin\Notepad++.lib" /MACHINE:X86 Release\Notepad_plus.res
+         Release\UserDefineDialog.res
+         Release\AboutDlg.obj
+         Release\ControlsTab.obj
+         Release\DocTabView.obj
+         Release\FileDialog.obj
+         Release\FindReplaceDlg.obj
+         Release\ImageListSet.obj
+         Release\Notepad_plus.obj
+         Release\Parameters.obj
+         Release\Printer.obj
+         Release\Process.obj
+         Release\ScintillaEditView.obj
+         Release\Splitter.obj
+         Release\SplitterContainer.obj
+         Release\StaticDialog.obj
+         Release\StatusBar.obj
+         Release\SysMsg.obj
+         Release\TabBar.obj
+         Release\ToolBar.obj
+         Release\URLCtrl.obj
+         Release\UserDefineDialog.obj
+         Release\winmain.obj
+         
+         正在搜索库
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comctl32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\shlwapi.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\shell32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\kernel32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\user32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\gdi32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\winspool.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comdlg32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\advapi32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\ole32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\oleaut32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\uuid.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbc32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbccp32.lib:
+             正在搜索 E:\Program Files\Microsoft Visual Studio 10.0\VC\lib\LIBCMT.lib:
+             正在搜索 E:\Program Files\Microsoft Visual Studio 10.0\VC\lib\OLDNAMES.lib:
+             正在搜索 E:\Program Files\Microsoft Visual Studio 10.0\VC\lib\libcpmt.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comctl32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\shlwapi.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\shell32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\kernel32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\user32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\gdi32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\winspool.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comdlg32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\advapi32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\ole32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\oleaut32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\uuid.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbc32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbccp32.lib:
+             正在搜索 E:\Program Files\Microsoft Visual Studio 10.0\VC\lib\LIBCMT.lib:
+             正在搜索 E:\Program Files\Microsoft Visual Studio 10.0\VC\lib\OLDNAMES.lib:
+         
+         已完成库搜索
+         
+         正在搜索库
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comctl32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\shlwapi.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\shell32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\kernel32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\user32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\gdi32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\winspool.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comdlg32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\advapi32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\ole32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\oleaut32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\uuid.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbc32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbccp32.lib:
+             正在搜索 E:\Program Files\Microsoft Visual Studio 10.0\VC\lib\LIBCMT.lib:
+             正在搜索 E:\Program Files\Microsoft Visual Studio 10.0\VC\lib\OLDNAMES.lib:
+             正在搜索 E:\Program Files\Microsoft Visual Studio 10.0\VC\lib\libcpmt.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comctl32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\shlwapi.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\shell32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\kernel32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\user32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\gdi32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\winspool.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\comdlg32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\advapi32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\ole32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\oleaut32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\uuid.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbc32.lib:
+             正在搜索 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\lib\odbccp32.lib:
+         
+         已完成库搜索
+         notepadPlus.vcxproj -> E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\visual.net\..\bin\Notepad++.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\bin\notepad++.exe;#1" /manifest Release\Notepad++.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Release\Notepad++.unsuccessfulbuild”。
+         正在对“Release\Notepad++.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\MyCode\readCode\notepad_plus.10.src\PowerEditor\visual.net\notepadPlus.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:14.62
